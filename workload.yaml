@@ -1,0 +1,46 @@
+$schema: "1.0"
+name: "AVM-Devbox"
+tasks:
+  - name: choco
+    parameters:
+      package: vscode
+  - name: choco
+    parameters:
+      package: azure-cli
+  - name: choco
+    parameters:
+      package: terraform
+  - name: install-vs-extension
+    description: Install Go Language Extension
+    parameters:
+      marketplaceItemName: golang.Go
+  - name: install-vs-extension
+    description: Install GitHub Copilot
+    parameters:
+      marketplaceItemName: GitHub.copilotvs
+  - name: install-vs-extension
+    description: Install Bicep Extension
+    parameters:
+      marketplaceItemName: ms-azuretools.vscode-bicep
+  - name: install-vs-extension
+    description: Install Terraform Extension
+    parameters:
+      marketplaceItemName: ms-azuretools.vscode-azureterraform
+  - name: install-vs-extension
+    description: Install Azure Extension
+    parameters:
+      marketplaceItemName: ms-vscode.vscode-node-azure-pack
+  - name: install-vs-extension
+    description: Install Azure Extension
+    parameters:
+      marketplaceItemName: ms-vscode-remote.remote-wsl
+  - name: git-clone
+    description: Clone this repository into C:\Workspaces
+    parameters:
+      repositoryUrl: https://github.com/Azure-Samples/avm-bicep-labs
+      directory: C:\repos\avm-bicep
+  - name: git-clone
+    description: Clone this repository into C:\Workspaces
+    parameters:
+      repositoryUrl: https://github.com/Azure-Samples/avm-terraform-labs
+      directory: C:\repos\avm-terraform
