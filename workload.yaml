@@ -13,7 +13,7 @@ tasks:
   - name: install-vs-extension
     description: Install Go Language Extension
     parameters:
-      marketplaceItemName: golang.Go
+      marketplaceItemName: golang.Govs
   - name: install-vs-extension
     description: Install GitHub Copilot
     parameters:
